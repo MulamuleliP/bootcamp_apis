@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp-apis</title>
+    <script src="alphineData.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- enoughAirtime  -->
+    <div x-data="airtimeCalculator" style="margin-bottom: 20px;">
+        <h2>Airtime Calculator</h2>
+        <input type="text" x-model="usage" placeholder="Enter usage (airtime)" />
+        <input type="text" x-model="airtime" placeholder="Enter available airtime (airtime)" />
+        <button @click="calculateAirtime">Calculate Remaining Airtime</button>
+        <div x-text="remainingAirtime ? `Remaining Airtime: ${remainingAirtime} ` : errorAirtime"></div>
+    </div>
+
+    <!-- totalPhoneBill  -->
+    <div x-data="phoneBillCalculator" style="margin-bottom: 20px;">
+        <h2>Phone Bill Calculator</h2>
+        <input type="text" x-model="bills" placeholder="Enter bill usage" />
+        <button @click="calculateTotalBill">Calculate Total Bill</button>
+        <div x-text="total ? `Total Bill: R${total}` : errorBill"></div>
+    </div>
+
+    <!-- wordGame  -->
+    <div x-data="wordGame" style="margin-bottom: 20px;">
+        <h2>Word Game </h2>
+        <input type="text" x-model="sentence" placeholder="Enter a sentence" />
+        <button @click="analyzeSentence">Analyse Sentence</button>
+        <div>
+            <p x-text="longestWord ? `Longest Word: ${longestWord}` : errorWordGame"></p>
+            <p x-text="shortestWord ? `Shortest Word: ${shortestWord}` : ''"></p>
+            <p x-text="wordLengthSum ? `Total Length of All Words: ${wordLengthSum}` : ''"></p>
+        </div>
+    </div>
+</body>
+</html>

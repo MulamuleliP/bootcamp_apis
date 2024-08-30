@@ -1,0 +1,39 @@
+{
+  "name": "bootcamp_apis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": "",
+  "contributors": [],
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "es6": "^0.0.7",
+    "js": "^0.1.0",
+    "nodemon": "^3.1.4",
+    "save": "^2.9.0"
+  }
+}

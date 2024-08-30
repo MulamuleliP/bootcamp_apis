@@ -1,0 +1,62 @@
+
+body {
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('bootcamp.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    flex-direction: column; 
+    
+  }
+
+
+.container {
+    background-image: url('bootcamp.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    flex-direction: column; 
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        height: 300px; 
+    }
+
+    body {
+        background-size: auto; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        height: 600px; 
+    }
+
+    body {
+        background-size: cover; 
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+}
